@@ -85,11 +85,14 @@ export default function Spending() {
   }
 
   return (
-    <div className="flex flex-col min-h-full pb-24">
+    <div className="flex flex-col min-h-full pb-8">
       {/* Header */}
       <div className="sticky top-0 z-40 bg-background/95 backdrop-blur-md border-b border-border">
         <div className="max-w-lg mx-auto px-4 pt-4 pb-3">
-          <h1 className="text-2xl font-bold tracking-tight">Spending</h1>
+          <div className="flex items-center gap-2">
+            <Wallet className="w-6 h-6 text-primary" strokeWidth={2.25} />
+            <h1 className="text-2xl font-bold tracking-tight">SimplySpending</h1>
+          </div>
           <div className="grid grid-cols-2 gap-2 mt-3">
             <div className="rounded-xl border border-card-border bg-card px-3 py-2">
               <p className="text-[11px] text-muted-foreground">Today</p>
